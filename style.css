@@ -1,0 +1,54 @@
+.larminstallering {
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.itsupport {
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    
+}
+
+.image-paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: 333;
+    text-align: center;
+    font-style: italic;
+}
+
+header {
+    text-align: center;
+    font-size: 70px;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+body {
+    background-color:beige
+}
+
+main {
+    border: solid #050000
+}
+
+footer {
+    background-color: white;
+}
