@@ -5,9 +5,11 @@
 }
 
 .itsupport {
-    width: 300px;
-    height: auto;
+    width: 400px;
+    height: 245px;
     margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .image-row {
