@@ -1,33 +1,79 @@
+.larminstallering {
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.itsupport {
+    width: 400px;
+    height: 245px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.image-paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #333; /* Corrected color format */
+    text-align: center;
+    font-style: italic;
+}
+
+header {
+    text-align: center;
+    font-size: 70px;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+body {
+    background-color: beige;
+}
+
+main {
+    border: solid #050000;
+}
+
+footer {
+    background-color: white;
+}
+
+/* Grid container styles */
 [class*="container"] {
-    border:1px solid #333;
+    border: 1px solid #333;
     min-height: 300px;
     width: 600px;
     margin: 20px;
-    
     display: grid;
 }
 
-/* Grid area */
+/* Grid layout configuration */
 .container3 {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto; /* default value */
-
-    /* 
-    Some rules that are required for grid-areas to work:
-    1. All rows need to have equal amount of values
-    2. Must manage all children inside of container, when using grid-areas
-    3. Need declare grid-area in every child, so that it is effected by grid-template-areas
-    4. May only create sections with 4 corners, meaning squares and rectangles
-    */
+    grid-template-rows: auto;
     grid-template-areas: 
         "header header header sidebar"
         "content content content sidebar"
-        "footer footer footer sidebar"
-    ;
-
+        "footer footer footer sidebar";
     gap: 10px;
     padding: 10px;
-
 }
 
 header {
@@ -38,21 +84,24 @@ header {
 }
 
 img {
-    float:right;
+    float: right;
     padding-top: 0%;
     margin-top: 0%;
     border-radius: 25px;
 }
+
 main {
     grid-area: content;
     background-color: wheat;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+
 aside {
     grid-area: sidebar;
     background-color: lightcyan;
 }
+
 footer {
     grid-area: footer;
     background-color: skyblue;
