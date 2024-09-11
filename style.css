@@ -41,6 +41,7 @@ img {
     float:right;
     padding-top: 0%;
     margin-top: 0%;
+    border-radius: 25px;
 }
 main {
     grid-area: content;
