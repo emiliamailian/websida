@@ -16,7 +16,6 @@
     display: flex;
     justify-content: space-around;
     gap: 20px;
-    
 }
 
 .image-paragraph {
@@ -29,7 +28,7 @@
 
 p {
     font-size: 16px;
-    color: 333;
+    color: #333; /* Corrected color format */
     text-align: center;
     font-style: italic;
 }
@@ -43,14 +42,67 @@ h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
 }
+
 body {
-    background-color:beige
+    background-color: beige;
 }
 
 main {
-    border: solid #050000
+    border: solid #050000;
 }
 
 footer {
     background-color: white;
+}
+
+/* Grid container styles */
+[class*="container"] {
+    border: 1px solid #333;
+    min-height: 300px;
+    width: 600px;
+    margin: 20px;
+    display: grid;
+}
+
+/* Grid layout configuration */
+.container3 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header sidebar"
+        "content content content sidebar"
+        "footer footer footer sidebar";
+    gap: 10px;
+    padding: 10px;
+}
+
+header {
+    grid-area: header;
+    background-color: tomato;
+    padding-top: 0%;
+    margin-top: 0%;
+}
+
+img {
+    float: right;
+    padding-top: 0%;
+    margin-top: 0%;
+    border-radius: 25px;
+}
+
+main {
+    grid-area: content;
+    background-color: wheat;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: lightcyan;
+}
+
+footer {
+    grid-area: footer;
+    background-color: skyblue;
 }
