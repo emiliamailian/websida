@@ -1,108 +1,60 @@
-.larminstallering {
-    width: 300px;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.itsupport {
-    width: 400px;
-    height: 245px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.image-row {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-}
-
-.image-paragraph {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-
-p {
-    font-size: 16px;
-    color: #333; /* Corrected color format */
-    text-align: center;
-    font-style: italic;
-}
-
-header {
-    text-align: center;
-    font-size: 70px;
-}
-
-h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-}
-
+/* Grundläggande stil */
 body {
-    background-color: beige;
-}
-
-main {
-    border: solid #050000;
-}
-
-footer {
-    background-color: white;
-}
-
-/* Grid container styles */
-[class*="container"] {
-    border: 1px solid #333;
-    min-height: 300px;
-    width: 600px;
-    margin: 20px;
-    display: grid;
-}
-
-/* Grid layout configuration */
-.container3 {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "header header header sidebar"
-        "content content content sidebar"
-        "footer footer footer sidebar";
-    gap: 10px;
-    padding: 10px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
 header {
-    grid-area: header;
-    background-color: tomato;
-    padding-top: 0%;
-    margin-top: 0%;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
 }
 
-img {
-    float: right;
-    padding-top: 0%;
-    margin-top: 0%;
-    border-radius: 25px;
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-main {
-    grid-area: content;
-    background-color: wheat;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-aside {
-    grid-area: sidebar;
-    background-color: lightcyan;
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#home {
+    background: #f4f4f4;
+}
+
+#about, #portfolio, #contact {
+    background: #fff;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.portfolio-item {
+    margin-bottom: 20px;
 }
 
 footer {
-    grid-area: footer;
-    background-color: skyblue;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
